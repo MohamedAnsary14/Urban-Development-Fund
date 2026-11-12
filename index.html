@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="UDF logo.png" rel="icon">
+    <title>إدارة الاتصال السياسي وخدمة المواطنين - صندوق التنمية الحضرية</title>
+    <!-- Bootstrap 5 RTL CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <!-- Google Fonts: Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section (Fixed/Sticky) -->
+    <header class="text-center sticky-header">
+        <div class="container">
+            <!-- الشعار -->
+            <img src="UDF logo.png" alt="صندوق التنمية الحضرية" class="logo-img">
+            <h1 class="header-title fs-3">إدارة الاتصال السياسي وخدمة المواطنين</h1>
+        </div>
+    </header>
+
+    <main class="flex-grow-1">
+        <!-- Hero Intro Section -->
+        <section class="hero-section">
+            <div class="container">
+                <p>
+                    <strong>صندوق التنمية الحضرية</strong> هو هيئة حكومية مصرية تابعة لمجلس الوزراء، تم تعديل مسماه واختصاصاته بقرار جمهوري عام 2021 ليتوسع دوره من مجرد القضاء على العشوائيات إلى التطوير العمراني الشامل على مستوى الجمهورية. نقدم من خلال هذه البوابة خدمات الإدارة لتسهيل الإجراءات على المواطنين.
+                </p>
+            </div>
+        </section>
+
+        <div class="container mb-5">
+            <!-- Main Services Grid -->
+            <div id="services-grid" class="row g-4">
+                <!-- سيتم ملء هذه المنطقة بواسطة ملف الجافا سكريبت -->
+            </div>
+
+            <!-- Details Section (Hidden by default) -->
+            <div id="details-section">
+                <button class="back-btn mb-4" onclick="showMainGrid()">
+                    <i class="fas fa-arrow-right ms-2"></i> عودة للخدمات الرئيسية
+                </button>
+                <h2 id="detail-title" class="details-title"></h2>
+                <h4 class="mb-4">المرفقات المطلوبة:</h4>
+                <ul id="detail-attachments" class="attachments-list"></ul>
+                <div id="detail-note" class="important-note d-none"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer / Contact Us Section -->
+    <footer id="contact-us">
+        <div class="container">
+            <h3 class="mb-4 text-center" style="color: var(--accent-color);">تواصل معنا</h3>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h5 class="mb-1">رقم التواصل</h5>
+                            <p class="mb-0 fw-bold" dir="ltr">01113972724</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h5 class="mb-1">عنوان الصندوق</h5>
+                            <p class="mb-0">الحي الحكومي – مبنى الهيئات التابعة لرئاسة مجلس الوزراء – العاصمة الإدارية الجديدة</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope-open-text"></i></div>
+                        <div>
+                            <h5 class="mb-1">للشكاوى والاستفسارات والالتماسات</h5>
+                            <a href="https://complaints.udf-apps.com/" target="_blank" class="contact-link fw-bold">
+                                https://complaints.udf-apps.com/
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript File -->
+    <script src="main.js"></script>
+</body>
+</html>

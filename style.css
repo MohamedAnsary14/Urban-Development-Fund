@@ -1,0 +1,194 @@
+:root {
+    --primary-color: #0d3b4e; /* لون مستوحى من خلفية الشعار */
+    --secondary-color: #f37b21; /* اللون البرتقالي في الشعار */
+    --accent-color: #fdb813; /* اللون الأصفر في الشعار */
+    --text-dark: #333333;
+    --bg-light: #f8f9fa;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 150px; /* مسافة تعويضية لمنع تداخل المحتوى مع الهيدر الثابت */
+}
+
+/* Header & Logo - تثبيت الهيدر أعلى الصفحة */
+header.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--primary-color);
+    padding: 10px 0;
+    border-bottom: 4px solid var(--secondary-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo-img {
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.header-title {
+    color: white;
+    font-weight: 700;
+    margin-top: 8px;
+    font-size: 1.25rem !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Service Cards */
+.service-card {
+    background: white;
+    border: none;
+    border-radius: 12px;
+    padding: 30px 20px;
+    height: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    cursor: pointer;
+    text-align: center;
+    border-bottom: 4px solid transparent;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.service-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+/* Details Section */
+#details-section {
+    display: none;
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+.details-title {
+    color: var(--primary-color);
+    font-weight: 800;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.attachments-list {
+    list-style: none;
+    padding: 0;
+}
+
+.attachments-list li {
+    position: relative;
+    padding-right: 35px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.attachments-list li::before {
+    content: "\f00c";
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 0;
+    top: 2px;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.important-note {
+    background-color: rgba(243, 123, 33, 0.1);
+    border-right: 4px solid var(--secondary-color);
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* Footer / Contact Us */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 50px 0 20px;
+    margin-top: auto;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon {
+    background: var(--secondary-color);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-left: 15px;
+    flex-shrink: 0;
+}
+
+.contact-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-link:hover {
+    color: var(--accent-color);
+}
+
+.back-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
