@@ -30,7 +30,7 @@ header.sticky-header {
 }
 
 .logo-img {
-    max-height: 100px;
+    max-height: 150px;
     object-fit: contain;
 }
 
@@ -191,4 +191,48 @@ footer {
 .back-btn:hover {
     background-color: var(--secondary-color);
     color: white;
+}
+/* المقاسات الافتراضية والخاصة بالموبايل (الشاشات الصغيرة) */
+.responsive-logo-right {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+}
+
+.responsive-logo-left {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+.header-title {
+    font-size: 1.1rem !important;
+    color: white;
+    font-weight: 700;
+}
+
+/* مسافة تعويضية للهيدر على الموبايل */
+body {
+    padding-top: 230px; 
+}
+
+/* للشاشات المتوسطة والكبيرة (الكمبيوتر والتابلت - بدءاً من عرض 768 بكسل) */
+@media (min-width: 768px) {
+    .responsive-logo-right {
+        height: 120px;
+        width: 180px;
+    }
+    
+    .responsive-logo-left {
+        height: 100px;
+        width: 100px;
+    }
+    
+    .header-title {
+        font-size: 1.4rem !important;
+    }
+    
+    body {
+        padding-top: 150px; /* مسافة الكمبيوتر */
+    }
 }

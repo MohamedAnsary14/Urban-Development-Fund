@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,23 +15,39 @@
     <!-- Custom CSS File -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Header Section (Fixed/Sticky) -->
-    <header class="text-center sticky-header">
-        <div class="container">
-            <!-- الشعار -->
-            <img src="UDF logo.png" alt="صندوق التنمية الحضرية" class="logo-img">
-            <h1 class="header-title fs-3">إدارة الاتصال السياسي وخدمة المواطنين</h1>
+ <header class="text-center sticky-header py-2">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        
+        <!-- الصورة التي على اليمين (صندوق التنمية الحضرية) - ستكون في الأسفل على الموبايل وفي اليمين على الكمبيوتر -->
+        <div class="order-3 order-md-1 mb-2 mb-md-0 d-flex justify-content-center align-items-center">
+            <img src="UDF logo.png" alt="صندوق التنمية الحضرية" class="responsive-logo-right">
         </div>
-    </header>
+
+        <!-- العنوان في المنتصف - يظل دائماً في المنتصف -->
+        <div class="order-2 order-md-2 mb-2 mb-md-0 d-flex justify-content-center align-items-center">
+            <h1 class="header-title m-0">إدارة الإتصال السياسي وخدمة المواطنين</h1>
+        </div>
+
+        <!-- الصورة التي على اليسار (رئاسة مجلس الوزراء) - ستكون في الأعلى على الموبايل وفي اليسار على الكمبيوتر -->
+        <div class="order-1 order-md-3 d-flex justify-content-center align-items-center">
+            <img src="LOOG30.png" alt="رئاسة مجلس الوزراء" class="responsive-logo-left">
+        </div>
+
+    </div>
+</header>
 
     <main class="flex-grow-1">
         <!-- Hero Intro Section -->
         <section class="hero-section">
-            <div class="container">
+            <div class="container py-10px">
                 <p>
-                    <strong>صندوق التنمية الحضرية</strong> هو هيئة حكومية مصرية تابعة لمجلس الوزراء، تم تعديل مسماه واختصاصاته بقرار جمهوري عام 2021 ليتوسع دوره من مجرد القضاء على العشوائيات إلى التطوير العمراني الشامل على مستوى الجمهورية. نقدم من خلال هذه البوابة خدمات الإدارة لتسهيل الإجراءات على المواطنين.
+                    <strong>صندوق التنمية الحضرية</strong> هو هيئة حكومية مصرية تابعة لمجلس الوزراء، تم تعديل مسماه
+                    واختصاصاته بقرار جمهوري عام 2021 ليتوسع دوره من مجرد القضاء على العشوائيات إلى التطوير العمراني
+                    الشامل على مستوى الجمهورية. نقدم من خلال هذه البوابة خدمات الإدارة لتسهيل الإجراءات على المواطنين.
                 </p>
             </div>
         </section>
@@ -61,18 +78,19 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
                         <div>
                             <h5 class="mb-1">رقم التواصل</h5>
                             <p class="mb-0 fw-bold" dir="ltr">01113972724</p>
                         </div>
                     </div>
-                    
+
                     <div class="contact-item">
                         <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <div>
                             <h5 class="mb-1">عنوان الصندوق</h5>
-                            <p class="mb-0">الحي الحكومي – مبنى الهيئات التابعة لرئاسة مجلس الوزراء – العاصمة الإدارية الجديدة</p>
+                            <p class="mb-0">الدور الارضي مبنى الهيئات التابعة لرئاسة مجلس الوزراء ( L1M-Zone11 ) بالحي
+                                الحكومي - العاصمه الإداريه الجديدة</p>
                         </div>
                     </div>
 
@@ -95,4 +113,5 @@
     <!-- Custom JavaScript File -->
     <script src="main.js"></script>
 </body>
+
 </html>
